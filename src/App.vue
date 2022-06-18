@@ -1,32 +1,44 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view />
-  </div>
+  <v-app>
+    <v-app-bar elevation="0" color="rgba(252, 252, 252, 0.25)" absolute>
+      <div class="d-flex align-center">
+        <a
+          href="#"
+          class="d-block my-auto"
+          style="text-decoration: none; color: black; font-size: 14px"
+          >archive</a
+        >
+      </div>
+    </v-app-bar>
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
-<style lang="scss">
+<script>
+export default {
+  name: "App",
+
+  data: () => ({
+    //
+  }),
+};
+</script>
+
+<style>
+body {
+  background: rgba(252, 252, 252, 0.25);
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: rgba(252, 252, 252, 0.25);
+}
+* {
+  font-family: "Noto Serif Display", serif;
   text-align: center;
-  color: #2c3e50;
 }
+</style>
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+<style lang="scss">
+@import "@/styles/styles.scss";
 </style>

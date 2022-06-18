@@ -1,4 +1,17 @@
 const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
-  transpileDependencies: true,
+  transpileDependencies: ["vuetify"],
+  css: {
+    loaderOptions: {
+      scss: {
+        additionalData: `@import "~@/styles/config/_variables.scss";`,
+      },
+    },
+  },
+  pwa: {
+    themeColor: "#fff",
+    msTileColor: "#fff",
+    appleMobileWebAppCapable: "yes",
+    appleMobileWebAppStatusBarStyle: "white",
+  },
 });
