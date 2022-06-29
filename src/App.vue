@@ -1,14 +1,14 @@
 <template>
   <v-app>
     <v-app-bar elevation="0" color="rgba(252, 252, 252, 0.25)" absolute>
-      <div class="d-flex align-center">
+      <!-- <div class="d-flex align-center">
         <a
           href="#"
           class="d-block my-auto"
           style="text-decoration: none; color: black; font-size: 14px"
           >archive</a
         >
-      </div>
+      </div> -->
     </v-app-bar>
     <v-main>
       <router-view />
