@@ -9,6 +9,7 @@ module.exports = defineConfig({
     },
   },
   pwa: {
+    name: "Earth Sandwich",
     themeColor: "#fff",
     msTileColor: "#fff",
     appleMobileWebAppCapable: "yes",
